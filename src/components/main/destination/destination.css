@@ -1,0 +1,121 @@
+.destination{
+    background: url(./destination-assets/background-destination-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.moon-container,
+.mars-container,
+.europa-container,
+.titan-container{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+
+    width: 100%;
+    max-width: 78%;
+    text-transform: uppercase;
+    font-weight: 300;
+    height: 100%;
+    padding-top: 212px;
+    padding-bottom: 6rem;
+
+    border:  1px solid red;
+
+    /* position: absolute;
+    inset: 0; */
+    display: none;
+}
+/***## TAKE NOTE OF THIS POINT ABOVE AND BELOW ###***/
+.moon-container{
+    display: flex;
+    /* position: absolute; */
+}
+.destination h2{
+    font-family: "Barlow condensed", sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 4.72px;
+}
+.destination h2 span{
+    color: var(--h1-span-clr);
+    font-weight: bold;
+    letter-spacing: 2.75px;
+}
+
+.destination__content-bx{
+    display: flex;
+    justify-content: center;
+    gap: 157px;
+}
+.destination__content-bx > .left{
+    max-width: 445px;
+    height: 445px;
+}
+.destination__content-bx >.left img{
+    width: 100%;
+    height: 100%;
+}
+.destination__content-bx > .right{
+    max-width: 445px;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+.destination__content-bx > .right .tab-bx{
+    display: flex;
+    gap: 36px;
+    font-size: 16px;
+    font-family: "Barlow condensed", sans-serif;
+
+    list-style: none;
+}
+.destination__content-bx > .right .tab-bx li{
+    padding-bottom: 12px;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+.moon-container .destination__content-bx  > .right .tab-bx li:nth-child(1),
+.mars-container .destination__content-bx  > .right .tab-bx li:nth-child(2),
+.europa-container .destination__content-bx  > .right .tab-bx li:nth-child(3),
+.titan-container .destination__content-bx  > .right .tab-bx li:nth-child(4){
+    border-bottom: 3px solid var(--active);
+}
+.destination__content-bx > .right .tab-bx li:hover{
+    border-bottom: 3px solid var(--hover-clr);
+}
+.destination__content-bx > .right h3{
+    font-size: 100px;
+    font-weight: 300;
+}
+.destination__content-bx > .right p{
+    text-transform: none;
+    font-size: 18px;
+    font-family: "Barlow", sans-serif;
+    line-height: 32px;
+}
+.destination__content-bx > .right .more-details{
+    display: flex;
+    gap: 79px;
+}
+.destination__content-bx > .right .more-details .left,
+.destination__content-bx > .right .more-details .right{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.destination__content-bx > .right .more-details .average-distance,
+.destination__content-bx > .right .more-details .travel-time{
+    font-size: 14px;
+}
+.destination__content-bx > .right .more-details .avg-distance__value{
+    font-size: 28px;
+}

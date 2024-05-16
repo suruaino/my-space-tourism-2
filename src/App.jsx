@@ -1,54 +1,43 @@
 import "./App.css";
 import { Route, Routes, Link } from "react-router-dom";
+import Layer from "./components/header/Layer";
+import Home from "./components/main/home/Home";
+import Crew from "./components/main/crew/Crew";
+import Destination from "./components/main/destination/Destination";
+import Technology from "./components/main/technology/Technology";
 
-const Header = () => {
-  return(
-      <header>
-
-          <div className="logo">
-              {/* <img src={logo} alt="" /> */}
-          </div>
-
-          <nav>
-          <ul>
-          <li><Link to="/Home"><span>00</span> Home</Link></li>
-            
-              <li><Link to="/About"><span>01</span> Destination</Link></li>
-              <li><Link to="#"><span>02</span> Crew</Link></li>
-              <li><Link to="#"><span>03</span> Technology</Link></li>
-          </ul>
-          </nav>
-  
-      </header>
-  )
-}
-
-const Home = () => {
-  return <h1>I am Home</h1>
-}
-
-const About = () => {
+const ErrorMsg = () => {
   return (
-    <>
-      <h2>Emmanuel</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae consequatur deserunt doloribus assumenda minus, totam libero accusamus consequuntur, commodi molestiae architecto, sed esse omnis! Quisquam necessitatibus adipisci architecto a ullam.
-      </p>
-    </>
-  )
-}
-
+    <section
+      className="error-message"
+      style={{
+        width: "100%",
+        height: "100dvh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <h2>
+        404 Error <br /> Page not found
+      </h2>
+      <Link to="/Home">Back to home</Link>
+    </section>
+  );
+};
 
 function App() {
   return (
-
-      <Routes>
-        <Route exact path="/" element={ <Header />}></Route>
-        <Route path="/home" element={ <Home />}></Route>
-        <Route path="/about" element={ <About />}></Route>
-          
-        
-      </Routes>
-  
+    <Routes>
+      <Route path="/" element={<Layer />}>
+        <Route exact path="/home" element={<Home />}></Route>
+        <Route path="/destination" element={<Destination />}></Route>
+        <Route path="/crew" element={<Crew />}></Route>
+        <Route path="/technology" element={<Technology />}></Route>
+        <Route path="*" element={<ErrorMsg />}></Route>
+      </Route>
+    </Routes>
   );
 }
 
