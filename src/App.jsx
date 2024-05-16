@@ -1,6 +1,27 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
 
+const Header = () => {
+  return(
+      <header>
+
+          <div className="logo">
+              {/* <img src={logo} alt="" /> */}
+          </div>
+
+          <nav>
+          <ul>
+          <li><Link to="/Home"><span>00</span> Home</Link></li>
+            
+              <li><Link to="/About"><span>01</span> Destination</Link></li>
+              <li><Link to="#"><span>02</span> Crew</Link></li>
+              <li><Link to="#"><span>03</span> Technology</Link></li>
+          </ul>
+          </nav>
+  
+      </header>
+  )
+}
 
 const Home = () => {
   return <h1>I am Home</h1>
@@ -21,10 +42,11 @@ function App() {
   return (
 
       <Routes>
-        <Route path="/" element={ <Home />}></Route>
-        <Route path="/about" element={ <About />}>
+        <Route exact path="/" element={ <Header />}></Route>
+        <Route path="/home" element={ <Home />}></Route>
+        <Route path="/about" element={ <About />}></Route>
           
-        </Route>
+        
       </Routes>
   
   );
