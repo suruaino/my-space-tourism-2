@@ -1,12 +1,20 @@
 import moon from "./destination-assets/image-moon.png";
-import mars from "./destination-assets/image-mars.png";
+import marsImg from "./destination-assets/image-mars.png";
 import europa from "./destination-assets/image-europa.png";
 import titan from "./destination-assets/image-titan.png";
 import "./destination.css";
+import { Link, Outlet } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+
+
+import Mars from "./mars/Mars";
 // import Header from "../../header/Header.js";
+
 const Destination = () => {
+
+  const { navigate } = useNavigate();
+
   return (
-    
     <div className="destination">
       {/* <Header /> */}
 
@@ -20,10 +28,20 @@ const Destination = () => {
           </div>
           <div className="right">
             <ul className="tab-bx">
-              <li>Moon</li>
-              <li>Mars</li>
-              <li>Europa</li>
-              <li>Titan</li>
+              <li>
+              
+                <Link to="Moon">Moon</Link>
+              </li>
+              <li>
+              {/* <button onClick={ () => navigate(`/Destination/${Mars}`)}>Moon</button> */}
+                <Link to="Mars">Mars</Link>
+              </li>
+              <li>
+                <Link to="Europe">Europa</Link>
+              </li>
+              <li>
+                <Link to="Titan">Titan</Link>
+              </li>
             </ul>
             <h3>Moon</h3>
             <p>
@@ -47,13 +65,13 @@ const Destination = () => {
         </div>
       </div>
 
-      <div className="mars-container">
+      {/* <div className="mars-container">
         <h2>
           <span>01</span> Pick your destination
         </h2>
         <div className="destination__content-bx">
           <div className="left">
-            <img src={mars} />
+            <img src={marsImg} />
           </div>
           <div className="right">
             <ul className="tab-bx">
@@ -81,7 +99,7 @@ const Destination = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="europa-container">
         <h2>
@@ -120,7 +138,6 @@ const Destination = () => {
         </div>
       </div>
 
-
       <div className="titan-container">
         <h2>
           <span>01</span> Pick your destination
@@ -138,7 +155,10 @@ const Destination = () => {
             </ul>
             <h3>Titan</h3>
             <p>
-            The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+              The only moon known to have a dense atmosphere other than Earth,
+              Titan is a home away from home (just a few hundred degrees
+              colder!). As a bonus, you get striking views of the Rings of
+              Saturn.
             </p>
             <div className="more-details">
               <div className="left">
@@ -155,7 +175,7 @@ const Destination = () => {
         </div>
       </div>
 
-
+      <Outlet />
     </div>
   );
 };

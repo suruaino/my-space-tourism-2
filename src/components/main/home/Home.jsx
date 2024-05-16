@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-container">
-        <div class="left">
+        <div className="left">
           <h1>
             <span>So, you want to travel to</span>Space
           </h1>
@@ -19,8 +19,8 @@ const Home = () => {
             world experience!
           </p>
         </div>
-        <div class="right">
-          <button  class="explore">Explore</button>
+        <div className="right">
+          <button  className="explore">Explore</button>
         </div>
       </div>
     </div>

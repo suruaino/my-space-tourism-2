@@ -6,6 +6,8 @@ import Crew from "./components/main/crew/Crew";
 import Destination from "./components/main/destination/Destination";
 import Technology from "./components/main/technology/Technology";
 
+import Mars from "./components/main/destination/mars/Mars";
+
 const ErrorMsg = () => {
   return (
     <section
@@ -31,12 +33,14 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layer />}>
-        <Route exact path="/home" element={<Home />}></Route>
-        <Route path="/destination" element={<Destination />}></Route>
+        <Route exact path="/Home" element={<Home />} />
+        <Route path="/destination/*" element={<Destination />}>
+          <Route path="Mars" element={<Mars />} />
+        </Route>
         <Route path="/crew" element={<Crew />}></Route>
         <Route path="/technology" element={<Technology />}></Route>
-        <Route path="*" element={<ErrorMsg />}></Route>
       </Route>
+      <Route path="*" element={<ErrorMsg />}></Route>
     </Routes>
   );
 }

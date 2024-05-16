@@ -12,7 +12,7 @@
 }
 
 .moon-container,
-.mars-container,
+/* .mars-container, */
 .europa-container,
 .titan-container{
     display: flex;

@@ -1,6 +1,6 @@
 import logo from "./header-assets/logo.svg";
 import "./header.css";
-import { Route, Routes, Link, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Layer = () => {
   return (
