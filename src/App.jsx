@@ -7,6 +7,7 @@ import Destination from "./components/main/destination/Destination";
 import Technology from "./components/main/technology/Technology";
 
 import Mars from "./components/main/destination/mars/Mars";
+import Europa from "./components/main/destination/europa/Europa";
 
 const ErrorMsg = () => {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route exact path="/Home" element={<Home />} />
         <Route path="/destination/*" element={<Destination />}>
           <Route path="Mars" component={ Mars } />
+          <Route path="Europa" component={ Europa } />
         </Route>
         <Route path="/crew" element={<Crew />}></Route>
         <Route path="/technology" element={<Technology />}></Route>

@@ -102,7 +102,7 @@ const Destination = () => {
         </div>
       </div> */}
 
-      <div className="europa-container">
+      {/* <div className="europa-container">
         <h2>
           <span>01</span> Pick your destination
         </h2>
@@ -137,7 +137,7 @@ const Destination = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="titan-container">
         <h2>
