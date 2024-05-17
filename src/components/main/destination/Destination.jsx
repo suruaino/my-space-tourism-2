@@ -2,7 +2,7 @@ import moon from "./destination-assets/image-moon.png";
 import "./destination.css";
 import { Routes, Route, Link, Outlet } from "react-router-dom";
 
-// import Moon from "./moon/Moon";
+import Moon from "./moon/Moon";
 
 const Destination = () => {
 
@@ -54,11 +54,6 @@ const Destination = () => {
           </div>
         </div>
       </div> 
-
-      {/* <Routes>
-        <Route path="/destination/Mars" element={<Mars />} /> 
-      </Routes> */}
-
 
       <Outlet />
     </div>

@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes, Link, Navigate } from "react-router-dom";
 import Layer from "./components/header/Layer";
 import Home from "./components/main/home/Home";
 import Crew from "./components/main/crew/Crew";
@@ -36,8 +36,10 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layer />}>
-        <Route exact path="/home" element={<Home />} />
+        <Route index element={<Navigate to="home" />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/destination/*" element={<Destination />}>
+          <Route index element={<Navigate to="moon" />} />
           <Route path="moon" element={<Moon />} />  
           <Route path="mars" element={<Mars />} />
           <Route path="europa" element={<Europa />} />

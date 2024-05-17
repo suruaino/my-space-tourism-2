@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    width: 100%;
+    /* width: 100%; */
     height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -14,9 +14,6 @@
 }
 
 .moon-container
-/* .mars-container, */
-/* .europa-container, */
-/* .titan-container */
 {
     display: flex;
     flex-direction: column;
@@ -32,13 +29,15 @@
 
     border:  1px solid red;
 
-    /* position: absolute;
-    inset: 0; */
-    display: none;
+    position: absolute;
+    inset: 0; 
+    
+    /* display: none; */
 }
 /***## TAKE NOTE OF THIS POINT ABOVE AND BELOW ###***/
 .moon-container{
     display: flex;
+    /* z-index: -1; */
     /* position: absolute; */
 }
 .destination h2{
