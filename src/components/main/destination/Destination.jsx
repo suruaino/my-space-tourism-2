@@ -3,7 +3,7 @@ import marsImg from "./destination-assets/image-mars.png";
 import europa from "./destination-assets/image-europa.png";
 import titan from "./destination-assets/image-titan.png";
 import "./destination.css";
-import { Link, Outlet } from "react-router-dom";
+import { Routes, Route, Link, Outlet } from "react-router-dom";
 import {useNavigate} from "react-router-dom";
 
 
@@ -16,7 +16,7 @@ const Destination = () => {
 
   return (
     <div className="destination">
-      {/* <Header /> */}
+
 
       <div className="moon-container">
         <h2>
@@ -64,6 +64,7 @@ const Destination = () => {
           </div>
         </div>
       </div>
+
 
       {/* <div className="mars-container">
         <h2>
@@ -174,7 +175,9 @@ const Destination = () => {
           </div>
         </div>
       </div>
-
+      <Routes>
+        <Route path="/destination/Mars" element={<Mars />} /> 
+      </Routes>
       <Outlet />
     </div>
   );

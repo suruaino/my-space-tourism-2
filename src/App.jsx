@@ -35,7 +35,7 @@ function App() {
       <Route path="/" element={<Layer />}>
         <Route exact path="/Home" element={<Home />} />
         <Route path="/destination/*" element={<Destination />}>
-          <Route path="Mars" element={<Mars />} />
+          <Route path="Mars" component={ Mars } />
         </Route>
         <Route path="/crew" element={<Crew />}></Route>
         <Route path="/technology" element={<Technology />}></Route>
