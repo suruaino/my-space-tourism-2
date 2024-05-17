@@ -4,6 +4,8 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    width: 100%;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,10 +13,11 @@
     position: relative;
 }
 
-.moon-container,
+.moon-container
 /* .mars-container, */
 /* .europa-container, */
-.titan-container{
+/* .titan-container */
+{
     display: flex;
     flex-direction: column;
     gap: 70px;

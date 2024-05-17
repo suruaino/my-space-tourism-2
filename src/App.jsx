@@ -6,8 +6,10 @@ import Crew from "./components/main/crew/Crew";
 import Destination from "./components/main/destination/Destination";
 import Technology from "./components/main/technology/Technology";
 
+import Moon from "./components/main/destination/moon/Moon";
 import Mars from "./components/main/destination/mars/Mars";
 import Europa from "./components/main/destination/europa/Europa";
+import Titan from "./components/main/destination/titan/Titan";
 
 const ErrorMsg = () => {
   return (
@@ -34,10 +36,12 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layer />}>
-        <Route exact path="/Home" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
         <Route path="/destination/*" element={<Destination />}>
-          <Route path="Mars" component={ Mars } />
-          <Route path="Europa" component={ Europa } />
+          <Route path="moon" element={<Moon />} />  
+          <Route path="mars" element={<Mars />} />
+          <Route path="europa" element={<Europa />} />
+          <Route path="titan" element={<Titan />} />
         </Route>
         <Route path="/crew" element={<Crew />}></Route>
         <Route path="/technology" element={<Technology />}></Route>

@@ -1,36 +1,29 @@
-import moon from "./destination-assets/image-moon.png";
-import "./destination.css";
-import { Routes, Route, Link, Outlet } from "react-router-dom";
+import moonImg from "../destination-assets/image-moon.png";
+import { Link } from "react-router-dom";
 
-// import Moon from "./moon/Moon";
 
-const Destination = () => {
-
-  return (
-    <div className="destination">
-      {/* < Moon /> */}
-
-       <div className="moon-container">
+const Moon = () => {
+    <div className="moon-container">
         <h2>
           <span>01</span> Pick your destination
         </h2>
         <div className="destination__content-bx">
           <div className="left">
-            <img src={moon} />
+            <img src={moonImg} />
           </div>
           <div className="right">
             <ul className="tab-bx">
               <li>
-                <Link to="Moon">Moon</Link>
+                <Link to="moon">Moon</Link>
               </li>
               <li>
-                <Link to="Mars">Mars</Link>
+                <Link to="mars">Mars</Link>
               </li>
               <li>
-                <Link to="Europa">Europa</Link>
+                <Link to="europe">Europa</Link>
               </li>
               <li>
-                <Link to="Titan">Titan</Link>
+                <Link to="titan">Titan</Link>
               </li>
             </ul>
             <h3>Moon</h3>
@@ -53,16 +46,6 @@ const Destination = () => {
             </div>
           </div>
         </div>
-      </div> 
-
-      {/* <Routes>
-        <Route path="/destination/Mars" element={<Mars />} /> 
-      </Routes> */}
-
-
-      <Outlet />
-    </div>
-  );
-};
-
-export default Destination;
+      </div>
+}
+export default Moon;
