@@ -36,6 +36,7 @@ const App = () => {
 
 
   return (
+    <>
     <Routes>
       <Route path="/" element={<Layer />}>
         <Route index element={<Navigate to="home" />} />
@@ -52,6 +53,7 @@ const App = () => {
       </Route>
       <Route path="*" element={<ErrorMsg />}></Route>
     </Routes>
+    </>
   );
 }
 

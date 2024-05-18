@@ -1,5 +1,6 @@
 import moonImg from "../destination-assets/image-moon.png";
 import "./moon.css";
+import "../destination.css";
 import { Link } from "react-router-dom";
 
 

@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
 
     /* width: 100%; */
-    height: 100%;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,34 +13,8 @@
     position: relative;
 }
 
-.moon-container
-{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    gap: 70px;
-
-    width: 100%;
-    max-width: 78%;
-    text-transform: uppercase;
-    font-weight: 300;
-    height: 100%;
-    padding-top: 212px;
-    padding-bottom: 6rem;
-
-    border:  1px solid red;
-
-    position: absolute;
-    inset: 0; 
-    
-    /* display: none; */
-}
 /***## TAKE NOTE OF THIS POINT ABOVE AND BELOW ###***/
-.moon-container{
-    display: flex;
-    /* z-index: -1; */
-    /* position: absolute; */
-}
+
 .destination h2{
     font-family: "Barlow condensed", sans-serif;
     font-size: 28px;
@@ -73,10 +47,14 @@
     /* gap: 37px; */
 }
 .destination__content-bx > .right .tab-bx{
+    width: 100%;
     display: flex;
+    justify-content: start;
     gap: 36px;
     font-size: 16px;
     font-family: "Barlow condensed", sans-serif;
+
+    padding: 0;
 
     list-style: none;
 }
