@@ -1,8 +1,10 @@
 import moonImg from "../destination-assets/image-moon.png";
+import "./moon.css";
 import { Link } from "react-router-dom";
 
 
 const Moon = () => {
+  return(
     <div className="moon-container">
         <h2>
           <span>01</span> Pick your destination
@@ -20,7 +22,7 @@ const Moon = () => {
                 <Link to="mars">Mars</Link>
               </li>
               <li>
-                <Link to="europe">Europa</Link>
+                <Link to="europa">Europa</Link>
               </li>
               <li>
                 <Link to="titan">Titan</Link>
@@ -47,5 +49,6 @@ const Moon = () => {
           </div>
         </div>
       </div>
+  );
 }
 export default Moon;

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 import "./App.css";
-import { Route, Routes, Link, Navigate, useNavigate } from "react-router-dom";
+import { Route, Routes, Link, Navigate } from "react-router-dom";
 import Layer from "./components/header/Layer";
 import Home from "./components/main/home/Home";
 import Crew from "./components/main/crew/Crew";
@@ -11,7 +10,6 @@ import Moon from "./components/main/destination/moon/Moon";
 import Mars from "./components/main/destination/mars/Mars";
 import Europa from "./components/main/destination/europa/Europa";
 import Titan from "./components/main/destination/titan/Titan";
-
 
 const ErrorMsg = () => {
   return (
@@ -36,33 +34,18 @@ const ErrorMsg = () => {
 
 const App = () => {
 
-    // const navigate = useNavigate();
-    const [showMoon, setShowMoon] = useState(true);
-  
-    // const handleLinkClick = (destination) => {
-    //   if (destination !== "moon") {
-    //     setShowMoon(false);
-    //   }
-    // };
-
-    const handleLinkClick = (destination) => {
-      if (destination !== "moon") {
-        setShowMoon(false);
-      }
-    };
 
   return (
     <Routes>
       <Route path="/" element={<Layer />}>
         <Route index element={<Navigate to="home" />} />
-        {/* {showMoon && <Route path="moon" element={<Moon />} />} */}
         <Route path="/home" element={<Home />} />
         <Route path="/destination/*" element={<Destination />}>
           <Route index element={<Navigate to="moon" />} />
           <Route path="moon" element={<Moon />} />  
-          <Route path="mars" element={<Mars />} /*onClick={() => handleLinkClick("mars")}*/ />
-          <Route path="europa" element={<Europa />} /*onClick={() => handleLinkClick("europa")}*/ />
-          <Route path="titan" element={<Titan />} /*onClick={() => handleLinkClick("titan")} *//>
+          <Route path="mars" element={<Mars />} />
+          <Route path="europa" element={<Europa />} />
+          <Route path="titan" element={<Titan />} />
         </Route>
         <Route path="/crew" element={<Crew />}></Route>
         <Route path="/technology" element={<Technology />}></Route>

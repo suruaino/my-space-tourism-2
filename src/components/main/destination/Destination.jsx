@@ -1,27 +1,16 @@
-import React, { useState } from "react";
 import moon from "./destination-assets/image-moon.png";
 import "./destination.css";
 import { Routes, Route, Link, Outlet } from "react-router-dom";
 
 import Moon from "./moon/Moon";
 
-
-
-
 const Destination = () => {
-
-  const [showMoon, setShowMoon] = useState(true);
-  const handleLinkClick = (destination) => {
-      if (destination !== "moon") {
-        setShowMoon(false);
-      }
-    };
 
   return (
     <div className="destination">
-      {/* < Moon /> */}
+      < Moon />
 
-       <div className="moon-container">
+       {/* <div className="moon-container">
         <h2>
           <span>01</span> Pick your destination
         </h2>
@@ -32,16 +21,16 @@ const Destination = () => {
           <div className="right">
             <ul className="tab-bx">
               <li>
-                <Link to="Moon" >Moon</Link>
+                <Link to="Moon">Moon</Link>
               </li>
               <li>
-                <Link to="Mars" onClick={() => handleLinkClick("mars")}>Mars</Link>
+                <Link to="Mars">Mars</Link>
               </li>
               <li>
-                <Link to="Europa" onClick={() => handleLinkClick("europa")}>Europa</Link>
+                <Link to="Europa">Europa</Link>
               </li>
               <li>
-                <Link to="Titan" onClick={() => handleLinkClick("titan")}>Titan</Link>
+                <Link to="Titan">Titan</Link>
               </li>
             </ul>
             <h3>Moon</h3>
@@ -64,7 +53,8 @@ const Destination = () => {
             </div>
           </div>
         </div>
-      </div> 
+      </div>  */}
+
 
       <Outlet />
     </div>

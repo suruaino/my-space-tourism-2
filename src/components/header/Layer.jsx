@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 
 const Layer = () => {
   return (
-    <>
+    <div className="layer">
       <header>
         <div className="logo"><img src={logo} alt="" /></div>
 
@@ -35,7 +35,7 @@ const Layer = () => {
         </nav>
       </header>
       <Outlet />
-    </>
+    </div>
   );
 };
 
