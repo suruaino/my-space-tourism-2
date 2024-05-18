@@ -45,7 +45,7 @@ const App = () => {
     //   }
     // };
 
-    const handleLinkClick = () => {
+    const handleLinkClick = (destination) => {
       if (destination !== "moon") {
         setShowMoon(false);
       }
@@ -55,7 +55,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Layer />}>
         <Route index element={<Navigate to="home" />} />
-        {showMoon && <Route path="moon" element={<Moon />} />}
+        {/* {showMoon && <Route path="moon" element={<Moon />} />} */}
         <Route path="/home" element={<Home />} />
         <Route path="/destination/*" element={<Destination />}>
           <Route index element={<Navigate to="moon" />} />
