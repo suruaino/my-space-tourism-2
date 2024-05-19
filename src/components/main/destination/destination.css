@@ -63,6 +63,13 @@
     border-bottom: 3px solid transparent;
     cursor: pointer;
 }
+.destination__content-bx > .right .tab-bx li a{
+    color:  var(--txt-clr-2);
+    height: 100%;
+}
+.destination__content-bx > .right .tab-bx li a:hover{
+    color: var(--txt-clr-1);
+}
 .moon-container .destination__content-bx  > .right .tab-bx li:nth-child(1),
 .mars-container .destination__content-bx  > .right .tab-bx li:nth-child(2),
 .europa-container .destination__content-bx  > .right .tab-bx li:nth-child(3),

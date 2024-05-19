@@ -1,4 +1,5 @@
 import europaImg from "../destination-assets/image-europa.png";
+import {Link} from "react-router-dom";
 import "./europa.css";
 
 const Europa = () => {
@@ -13,10 +14,18 @@ const Europa = () => {
         </div>
         <div className="right">
           <ul className="tab-bx">
-            <li>Moon</li>
-            <li>Mars</li>
-            <li>Europa</li>
-            <li>Titan</li>
+          <li>
+                <Link to="/destination/moon">Moon</Link>
+              </li>
+              <li>
+                <Link to="/destination/mars">Mars</Link>
+              </li>
+              <li>
+                <Link to="/destination/europa">Europa</Link>
+              </li>
+              <li>
+                <Link to="/destination/titan">Titan</Link>
+              </li>
           </ul>
           <h3>Europa</h3>
           <p>

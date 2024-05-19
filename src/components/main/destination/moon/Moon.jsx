@@ -17,16 +17,16 @@ const Moon = () => {
           <div className="right">
             <ul className="tab-bx">
               <li>
-                <Link to="moon">Moon</Link>
+                <Link to="/destination/moon">Moon</Link>
               </li>
               <li>
-                <Link to="mars">Mars</Link>
+                <Link to="/destination/mars">Mars</Link>
               </li>
               <li>
-                <Link to="europa">Europa</Link>
+                <Link to="/destination/europa">Europa</Link>
               </li>
               <li>
-                <Link to="titan">Titan</Link>
+                <Link to="/destination/titan">Titan</Link>
               </li>
             </ul>
             <h3>Moon</h3>
