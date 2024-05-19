@@ -25,6 +25,9 @@ const ErrorMsg = () => {
     <section
       className="error-message"
       style={{
+        color: "#0B0D17",
+        fontSize: "2.5rem",
+        fontWeight: "Bold",
         width: "100%",
         height: "100dvh",
         display: "flex",
