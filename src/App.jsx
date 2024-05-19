@@ -11,6 +11,11 @@ import Mars from "./components/main/destination/mars/Mars";
 import Europa from "./components/main/destination/europa/Europa";
 import Titan from "./components/main/destination/titan/Titan";
 
+import Commander from "./components/main/crew/commander/commander"
+import MissionSpecialist from "./components/main/crew/mission-specialist/MissionSpecialist";
+import FlightEngineer from "./components/main/crew/flight-engineer/FlightEngineer";
+import Pilot from "./components/main/crew/pilot/Pilot"
+
 const ErrorMsg = () => {
   return (
     <section
@@ -41,6 +46,7 @@ const App = () => {
       <Route path="/" element={<Layer />}>
         <Route index element={<Navigate to="home" />} />
         <Route path="/home" element={<Home />} />
+
         <Route path="/destination/*" element={<Destination />}>
           <Route index element={<Navigate to="moon" />} />
           <Route path="moon" element={<Moon />} />  
@@ -48,7 +54,15 @@ const App = () => {
           <Route path="europa" element={<Europa />} />
           <Route path="titan" element={<Titan />} />
         </Route>
-        <Route path="/crew" element={<Crew />}></Route>
+
+        <Route path="/crew/*" element={<Crew />}>
+          <Route index element = {<Navigate to="commander" />} />
+          <Route path="commander" element={<Commander />} /> 
+          <Route path="mission-specialist" element={<MissionSpecialist/>} /> 
+          <Route path="flight-engineer" element={<FlightEngineer />} /> 
+          <Route path="pilot" element={<Pilot />} />
+        </Route>
+
         <Route path="/technology" element={<Technology />}></Route>
       </Route>
       <Route path="*" element={<ErrorMsg />}></Route>

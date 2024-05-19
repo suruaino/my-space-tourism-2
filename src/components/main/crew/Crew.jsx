@@ -1,16 +1,16 @@
+import { Link } from "react-router-dom";
 import douglas from "./crew-assets/image-douglas-hurley.png";
 import Mark  from "./crew-assets/image-mark-shuttleworth.png";
 import Victor  from "./crew-assets/image-victor-glover.png";
 import Anousheh  from "./crew-assets/image-anousheh-ansari.png";
 import "./crew.css";
-// import Header from "../../header/Header.js";
+
 
 const Crew = () => {
   return (
 
     <div className="crew">
 
-      {/* <Header /> */}
       <div className="commander-container">
         <div className="content-bx">
           <h2>
@@ -31,10 +31,10 @@ const Crew = () => {
             
           </div>
           <div className="indicator">
-              <button></button>
-              <button></button>
-              <button></button>
-              <button></button>
+              <Link to=""></Link>
+              <Link></Link>
+              <Link></Link>
+              <Link></Link>
             </div>
         </div>
         <div className="right">

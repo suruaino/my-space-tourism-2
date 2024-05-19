@@ -106,22 +106,22 @@
     display: flex;
     gap: 1rem;
   }
-  .crew .commander-container .indicator button:nth-child(1),
-  .crew .mission-specialist-container .indicator button:nth-child(2),
-  .crew .pilot-container .indicator button:nth-child(3),
-  .crew .flight-engineer-container .indicator button:nth-child(4){
+  .crew .commander-container .indicator a:nth-child(1),
+  .crew .mission-specialist-container .indicator a:nth-child(2),
+  .crew .pilot-container .indicator a:nth-child(3),
+  .crew .flight-engineer-container .indicator a:nth-child(4){
     background-color: var(--txt-clr-1);
   }
-  .crew .indicator button{
+  .crew .indicator a{
     width: 15px;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: var(--indicator-bg);
+    background-color: var(--indi-clr-3);
 
     transition: .4s;
     border: none;
     cursor: pointer;
   }
-  .crew .indicator button:hover{
-    background-color: var(--indicator-hover-bg);
+  .crew .indicator a:hover{
+    background-color: var(--indi-clr-2);
   }

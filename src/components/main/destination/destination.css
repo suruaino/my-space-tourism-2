@@ -67,14 +67,20 @@
     color:  var(--txt-clr-2);
     height: 100%;
 }
-.destination__content-bx > .right .tab-bx li a:hover{
-    color: var(--txt-clr-1);
-}
+
 .moon-container .destination__content-bx  > .right .tab-bx li:nth-child(1),
 .mars-container .destination__content-bx  > .right .tab-bx li:nth-child(2),
 .europa-container .destination__content-bx  > .right .tab-bx li:nth-child(3),
 .titan-container .destination__content-bx  > .right .tab-bx li:nth-child(4){
-    border-bottom: 3px solid white;
+    color:  var(--txt-clr-1);
+    border-bottom: 3px solid var(--txt-clr-1);
+}
+.moon-container .destination__content-bx  > .right .tab-bx li:nth-child(1) a,
+.mars-container .destination__content-bx  > .right .tab-bx li:nth-child(2) a,
+.europa-container .destination__content-bx  > .right .tab-bx li:nth-child(3) a,
+.titan-container .destination__content-bx  > .right .tab-bx li:nth-child(4) a{
+    color:  var(--txt-clr-1);
+
 }
 .destination__content-bx > .right .tab-bx li:hover{
     border-bottom: 3px solid var(--hover-clr);

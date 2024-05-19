@@ -8,11 +8,7 @@ const Destination = () => {
 
   return (
     <div className="destination">
-      {/* < Moon /> */}
-
-       
-
-
+      
       <Outlet />
     </div>
   );
