@@ -37,13 +37,15 @@ header{
   }
   
   header nav::before{
+    /* --indi-clr-1: hsl(0, 0%, 25.15%); */
     content: "";
     display: block;
     height: 1px;
     width: 60%;
     position: absolute;
     left: -54%;
-    background-color: var(--hover-clr);
+    background-color: hsl(0, 0%, 25.15%);
+    
   
   }
   
@@ -79,6 +81,7 @@ header{
     text-decoration: none;
     letter-spacing: .2rem;
     display: flex;
+    gap: 11px;
   }
   header nav ul li a span{
     color: var(--txt-clr-1);
@@ -87,7 +90,7 @@ header{
   header nav ul li::after{
     content: "";
     display: block;
-    height: 3px;
+    height: 4px;
     width: 100%;
     background-color: transparent;
     position: absolute;
@@ -96,5 +99,6 @@ header{
   header nav ul li:hover::after{
     display: block;
     background-color: var(--hover-clr);
+    /* background-color: white; */
   }
   

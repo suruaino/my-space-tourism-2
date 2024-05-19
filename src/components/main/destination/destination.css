@@ -67,7 +67,7 @@
 .mars-container .destination__content-bx  > .right .tab-bx li:nth-child(2),
 .europa-container .destination__content-bx  > .right .tab-bx li:nth-child(3),
 .titan-container .destination__content-bx  > .right .tab-bx li:nth-child(4){
-    border-bottom: 3px solid var(--active);
+    border-bottom: 3px solid white;
 }
 .destination__content-bx > .right .tab-bx li:hover{
     border-bottom: 3px solid var(--hover-clr);
