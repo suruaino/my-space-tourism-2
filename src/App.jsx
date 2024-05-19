@@ -16,6 +16,10 @@ import MissionSpecialist from "./components/main/crew/mission-specialist/Mission
 import FlightEngineer from "./components/main/crew/flight-engineer/FlightEngineer";
 import Pilot from "./components/main/crew/pilot/Pilot"
 
+import Launch from "./components/main/technology/launch/launch";
+import Spaceport from "./components/main/technology/spaceport/spaceport";
+import Capsule from "./components/main/technology/capsule/capsule";
+
 const ErrorMsg = () => {
   return (
     <section
@@ -63,7 +67,12 @@ const App = () => {
           <Route path="pilot" element={<Pilot />} />
         </Route>
 
-        <Route path="/technology" element={<Technology />}></Route>
+        <Route path="/technology" element={<Technology />}>
+          <Route index element = {<Navigate to="launch" />} />
+          <Route path="launch" element={<Launch />} /> 
+          <Route path="spaceport" element={<Spaceport/>} /> 
+          <Route path="capsule" element={<Capsule />} /> 
+        </Route>
       </Route>
       <Route path="*" element={<ErrorMsg />}></Route>
     </Routes>
