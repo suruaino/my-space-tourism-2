@@ -1,39 +1,30 @@
 .home{
     background: url(./home-assets/background-home-desktop.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; 
     background-size: cover;
-    display: flex;
-    align-items: end;
-    
   
     display: flex;
     justify-content: center;
-  
+    align-items: end;
+
     width: 100%;
     height: 100%;
-  
-    /* display: none; */
     
   }
   .home-container{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    /* flex-direction: column; */
-    /* align-self: center; */
-    
-    /* gap: 90px; */
-  
+
     width: 100%;
     max-width: 78%;
-    /* max-width: 1118.5px; */
     height: 100%;
-    margin: 387px  auto 100px;
-    /* padding-top: 6rem; */
+    margin: 387px  auto 0px;
+    padding: 100px 0;
     text-transform: uppercase;
   
-    border: 2px solid red;
+    border: 1px solid red;
   }
   .home .left{
     width: 45%;
@@ -92,39 +83,37 @@
   .home .right .explore{
     width: 274px;
     aspect-ratio: 1;
-    border: 40px solid transparent;
+    border: none;
     border-radius: 50%;
     background-color: var(--txt-clr-1);
     font-size: 32px;
-
     font-family: "Bellefair";
 
-    /* box-sizing: content-box; */
-
     position: relative;
-    z-index: 2;
+    z-index: 0;
     cursor: pointer;
     transition: .3s;
 
-    /* position: absolute; */
     z-index: 5;
     
   }
-  .home .right .explore:hover{
-    border: 40px solid var(--explore-hover);
-    /* border: 40px solid green; */
-  }
-  /* .home .right .explore::before{
+
+  .home .right .explore::before{
     content: "";
     display: block;
     border-radius: 50%;
-    inset: 20px;
-    width: 300px;
     aspect-ratio: 1;
-    background-color: red;
+    background-color: transparent;
 
-    position: relative;
-    isolation: isolate; 
+    position: absolute;
+    inset: 0;
     z-index: -1;
-  } */
+    border: 20px solid transparent;
+    box-sizing: content-box;
+  }
+
+  .home .right .explore:hover::before{
+
+    border: 40px solid var(--home-btn-hover);
+  }
  

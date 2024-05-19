@@ -12,8 +12,8 @@
   --txt-clr-2: #D0D6F9;
   --txt-clr-3: #0B0D17;
 
-  --bdr-clr: #979797;
-  --home-btn-hover: hsl(0, 0%, 10.36%);
+  --bdr-clr: hsl(0, 0%, 59%);
+  --home-btn-hover: hsl(0, 0%, 60%);
 
   --hover-clr: hsl(0, 0%, 50%);
   --indi-clr-1: hsl(0, 0%, 100%);
