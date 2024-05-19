@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import douglas from "./crew-assets/image-douglas-hurley.png";
 import Mark  from "./crew-assets/image-mark-shuttleworth.png";
 import Victor  from "./crew-assets/image-victor-glover.png";
@@ -11,7 +11,7 @@ const Crew = () => {
 
     <div className="crew">
 
-      <div className="commander-container">
+      {/* <div className="commander-container">
         <div className="content-bx">
           <h2>
             <span>02 </span>meet your crew
@@ -40,9 +40,9 @@ const Crew = () => {
         <div className="right">
           <img src={douglas} />
         </div>
-      </div>
+      </div> */}
 
-      <div className="mission-specialist-container">
+      {/* <div className="mission-specialist-container">
         <div className="content-bx">
           <h2>
             <span>02 </span>meet your crew
@@ -69,10 +69,10 @@ const Crew = () => {
         <div className="right">
           <img src={Mark} />
         </div>
-      </div>
+      </div> */}
 
 
-      <div className="pilot-container">
+      {/* <div className="pilot-container">
         <div className="content-bx">
           <h2>
             <span>02 </span>meet your crew
@@ -99,10 +99,10 @@ const Crew = () => {
         <div className="right">
           <img src={Victor} />
         </div>
-      </div>
+      </div> */}
 
 
-      <div className="flight-engineer-container">
+      {/* <div className="flight-engineer-container">
         <div className="content-bx">
           <h2>
             <span>02 </span>meet your crew
@@ -129,8 +129,9 @@ const Crew = () => {
         <div className="right">
           <img src={Anousheh} />
         </div>
-      </div>
+      </div> */}
 
+      <Outlet />
 
     </div>
   );

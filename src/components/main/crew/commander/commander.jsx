@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import douglas from "../crew-assets/image-douglas-hurley.png";
 
 const Commander = () => {
   return (
@@ -20,10 +21,10 @@ const Commander = () => {
           </p>
         </div>
         <div className="indicator">
-          <Link to=""></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
+          <Link to="/crew/commander"></Link>
+          <Link to="/crew/mission-specialist"></Link>
+          <Link to="/crew/flight-engineer"></Link>
+          <Link to="/crew/pilot"></Link>
         </div>
       </div>
       <div className="right">
