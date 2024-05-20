@@ -42,7 +42,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    /* margin: 0; */
 
     font-size: 150px;
     font-family: "Bellefair", sans-serif;
@@ -69,10 +68,6 @@
     word-spacing: .1rem;
   }
   .home .right{
-    /* background-color: var(-hover-indi-clr); */
-    /* position: absolute; */
-    /* bottom: 0;
-    right: 10.3rem; */
     width: 450px;
     aspect-ratio: 1;
 
@@ -114,7 +109,6 @@
   }
 
   .home .right .explore:hover::before{
-
     border: 40px solid var(--home-btn-hover);
   }
  
@@ -130,7 +124,6 @@
       height: 100dvh;
     }
     .home-container{
-
       height: 100%;
       text-align: center;
       flex-direction: column;
@@ -148,12 +141,9 @@
       font-size: 16px;
     }
     .home .right{
-      width: 450px;
+      width: 100%;
       aspect-ratio: 1;
-  
-      /* display: flex; */
       justify-content: center;
-      /* align-items: end; */
     
     }
     .home .right .explore{
@@ -164,7 +154,45 @@
   }
 
   @media (max-width: 375px) {
+    .home{
+      background: url(./home-assets/background-home-mobile.jpg);
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover;
+     height: 95dvh;
+    }
+    .home-container{
+      max-width: 90%;
+      gap: 81px;
+      padding-top: 91px;
+
+    }
     .home .left{
       font-size: 80px;
+      gap: 16px;
+
+    }
+    .home .left h1{
+      font-size: 80px;
+  
+    }
+    .home .left h1 span{
+      font-size: 16px;
+      letter-spacing: 2.7px;
+    }
+    .home .left p{
+      font-size: 15px;
+      line-height: 25px;
+    }
+    .home .right{
+      border: 1px solid ;
+    }
+    .home .right .explore{
+      width: 150px;
+      font-size: 20px;
+    }
+    .home .right .explore:hover::before{
+
+      border: 15px solid var(--home-btn-hover);
     }
   }
