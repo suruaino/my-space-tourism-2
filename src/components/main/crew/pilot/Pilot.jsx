@@ -4,10 +4,11 @@ import Victor from "../crew-assets/image-victor-glover.png";
 const Pilot = () => {
   return (
     <div className="pilot-container">
-      <div className="content-bx">
-        <h2>
+       <h2>
           <span>02 </span>meet your crew
         </h2>
+      <div className="content-bx">
+       
 
         <div className="left">
           <h3>

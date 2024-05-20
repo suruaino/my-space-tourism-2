@@ -4,10 +4,11 @@ import Anousheh from "../crew-assets/image-anousheh-ansari.png";
 const FlightEngineer = () => {
   return (
     <div className="flight-engineer-container">
-      <div className="content-bx">
         <h2>
           <span>02 </span>meet your crew
         </h2>
+      <div className="content-bx">
+      
 
         <div className="left">
           <h3>

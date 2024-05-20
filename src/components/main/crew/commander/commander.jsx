@@ -4,10 +4,11 @@ import douglas from "../crew-assets/image-douglas-hurley.png";
 const Commander = () => {
   return (
     <div className="commander-container">
-      <div className="content-bx">
-        <h2>
+       <h2>
           <span>02 </span>meet your crew
         </h2>
+      <div className="content-bx">
+       
 
         <div className="left">
           <h3>
