@@ -4,7 +4,7 @@
     gap: 70px;
 
     width: 100%;
-    max-width: 78%;
+    max-width: 60%;
     text-transform: uppercase;
     height: 100dvh;
     padding-top: 212px;
@@ -14,15 +14,15 @@
 
 }
 
-.destination__content-bx > .right{
-    max-width: 445px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
 
-}
 .destination__content-bx > .right h3{
     font-size: 100px;
     margin: 0;
+}
+@media (max-width: 768px) {
+    .moon-container{
+        gap: 60px;
+        padding-top: 136px;
+        max-width: 90%;
+    }
 }

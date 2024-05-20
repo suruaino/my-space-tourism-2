@@ -116,3 +116,70 @@
   .crew .indicator a:hover{
     background-color: var(--indi-clr-2);
   }
+
+
+  @media (max-width: 768px) {
+    .commander-container,
+    .mission-specialist-container,
+    .flight-engineer-container,
+    .pilot-container{
+      /* width: 100%; */
+      max-width: 90%;
+      
+      /* font-weight: 300; */
+      /* text-transform: uppercase; */
+    
+      /* display: flex; */
+      flex-direction: column;
+      gap: 40px;
+    
+      /* height: 100%; */
+      padding-top: 136px;
+      /* border: 1px solid red; */
+    }
+    .content-bx{
+      /* display: flex; */
+      /* flex-direction: column; */
+      gap: 40px;
+      /* height: 100%; */
+      /* border: 1px solid greenyellow; */
+    }
+    .crew h2{
+      font-size: 20px;
+      /* font-family: "Barlow condensed", sans-serif; */
+      /* font-weight: 300; */
+      /* letter-spacing: .2rem; */
+    }
+    .content-bx .left{
+      /* border: 1px solid white; */
+    
+      /* display: flex; */
+      /* flex-direction: column; */
+      align-items: center;
+      text-align: center;
+      /* gap: 27px; */
+    }
+    .crew h3{
+      font-size: 40px;
+      font-family: "Bellefair", sans-serif;
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .crew .left p{
+      /* text-transform: none; */
+      /* font-size: 18px; */
+      /* font-family: 'Barlow', sans-serif; */
+      /* font-weight: 300; */
+    
+      max-width: 75%;
+    }
+    .commander-container > .right,
+    .mission-specialist-container > .right,
+    .flight-engineer-container > .right,
+    .pilot-container > .right{
+    text-align: center;
+    }
+
+  }

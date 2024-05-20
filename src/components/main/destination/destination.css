@@ -31,6 +31,7 @@
     display: flex;
     justify-content: center;
     gap: 157px;
+    
 }
 .destination__content-bx > .left{
     max-width: 445px;
@@ -107,10 +108,72 @@
     gap: 12px;
 }
 
-.destination__content-bx > .right .more-details .average-distance,
+.destination__content-bx > .right .more-details .avg-distance,
 .destination__content-bx > .right .more-details .travel-time{
     font-size: 14px;
 }
 .destination__content-bx > .right .more-details .avg-distance__value{
     font-size: 28px;
+}
+
+@media (max-width: 768px) {
+    .destination{
+        gap: 157px;
+    }
+    .destination__content-bx{
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* justify-content: center; */
+        gap: 32px;
+    }
+    .destination__content-bx > .left{
+        max-width: 300px;
+        /* aspect-ratio: 1; */
+        height: 300px;
+    }
+    .destination__content-bx > .right{
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    
+    }
+    .destination__content-bx > .right .tab-bx{
+        /* width: 100%; */
+        /* display: flex; */
+        justify-content: center;
+        /* gap: 36px; */
+        /* font-size: 16px; */
+        /* font-family: "Barlow condensed", sans-serif; */
+    
+        /* padding: 0; */
+    
+        /* list-style: none; */
+    }
+    .destination__content-bx > .right p{
+        color: var(--txt-clr-2);
+        /* text-transform: none;
+        font-size: 18px;
+        font-family: "Barlow", sans-serif;
+        line-height: 32px; */
+        margin-top: -24px;
+    }
+    .destination__content-bx > .right .more-details .avg-distance,
+    .destination__content-bx > .right .more-details .travel-time{
+    font-size: 14px;
+    color: var(--txt-clr-2);
+}
+.destination__content-bx > .right .more-details{
+    /* display: flex; */
+    /* gap: 79px; */
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 90px;
+    margin-top: 49px;
+    border-top: 1px solid var(--bdr-clr);
+}
 }

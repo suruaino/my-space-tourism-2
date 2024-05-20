@@ -110,6 +110,7 @@ header{
       /* overflow: hidden; */
     }
     header{
+      top: 0;
       margin-left: 40px;
 
     }
@@ -131,11 +132,11 @@ header{
     }
   }
   @media (max-width: 375px) {
-    .layer{
+    /* .layer{ */
       /* min-width: 110%; */
       /* height: 10; */
       /* overflow: hidden; */
-    }
+    /* } */
     header{
       width: 100%;
       border: 1px solid;
