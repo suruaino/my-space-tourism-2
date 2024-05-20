@@ -6,7 +6,6 @@
     width: 100%;
     max-width: 78%;
     text-transform: uppercase;
-    font-weight: 300;
     height: 100dvh;
     padding-top: 212px;
     padding-bottom: 6rem;
@@ -21,10 +20,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    /* gap: 37px; */
+
 }
 .destination__content-bx > .right h3{
     font-size: 100px;
-    font-weight: 300;
     margin: 0;
 }

@@ -9,7 +9,6 @@
     align-items: center;
   
     width: 100%;
-    /* height: 100%; */
     position: relative;
   }
   
@@ -20,6 +19,7 @@
     width: 100%;
     max-width: 78%;
     
+    font-weight: 300;
     text-transform: uppercase;
   
     display: flex;
@@ -27,11 +27,8 @@
     height: 100%;
     padding-top: 212px;
     border: 1px solid red;
-    /* z-index: 10; */
   }
-  .commander-container{
-    display: flex;
-  }
+
    .content-bx{
     display: flex;
     flex-direction: column;
@@ -71,6 +68,7 @@
   
   .crew h3{
     font-size: 56px;
+    font-family: "Bellefair", sans-serif;
     font-weight: 300;
     display: flex;
     flex-direction: column;
