@@ -7,6 +7,7 @@ const Pilot = () => {
        <h2>
           <span>02 </span>meet your crew
         </h2>
+        <div className="wrapper">
       <div className="content-bx">
        
 
@@ -31,6 +32,7 @@ const Pilot = () => {
       </div>
       <div className="right">
         <img src={Victor} />
+      </div>
       </div>
     </div>
   );
