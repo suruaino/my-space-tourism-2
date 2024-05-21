@@ -4,6 +4,7 @@
   /* overflow: hidden; */
 }
 header{
+  height: 96px;
     text-transform: uppercase;
     color: var(--txt-clr-1);
     display: flex;
@@ -28,7 +29,7 @@ header{
     display: flex;
     align-items: center;
     width: 60%;
-    height: 6rem;
+    height: 100%;
     padding-left: 7rem;
     position: relative;
     z-index: 2;
@@ -139,10 +140,14 @@ header{
     /* } */
     header{
       width: 100%;
+      height: fit-content;
       border: 1px solid;
       margin: 0;
       padding-inline: 24px;
       top: 24px;
+    }
+    header .logo img{
+      width: 40px;
     }
     header nav{
       width: 254px;
@@ -185,4 +190,6 @@ header{
     header nav ul li a span{
       display: flex;
     }
+
+
   }
