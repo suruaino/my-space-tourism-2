@@ -164,28 +164,29 @@
       background-repeat: no-repeat;
       background-position: center; 
       background-size: cover;
-     height: 95dvh;
+     height: 100dvh;
     }
     .home-container{
       max-width: 90%;
-      gap: 81px;
+      gap: 88px;
       padding-top: 112px;
       /* padding-bottom: 100px; */
 
     }
     .home .left{
       font-size: 80px;
-      gap: 24px;
+      gap: 16px;
 
     }
     .home .left h1{
       font-size: 80px;
-      line-height: 50px;
+      line-height: 100px;
   
     }
     .home .left h1 span{
       font-size: 16px;
       letter-spacing: 2.7px;
+      line-height: 25px;
     }
     .home .left p{
       font-size: 15px;

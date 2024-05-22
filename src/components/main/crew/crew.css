@@ -80,7 +80,7 @@
 
   }
   .crew h2 span{
-    color: #695858;
+    color: var(--h2-span-clr);
     
     
     font-weight: 650;

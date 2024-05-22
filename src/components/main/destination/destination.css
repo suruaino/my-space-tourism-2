@@ -22,7 +22,7 @@
     letter-spacing: 4.72px;
 }
 .destination h2 span{
-    color: var(--h1-span-clr);
+    color: var(--h2-span-clr);
     font-weight: bold;
     letter-spacing: 2.75px;
 }

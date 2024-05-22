@@ -42,7 +42,7 @@
     letter-spacing: 4.72px;
   }
   .technology  h2 span{
-    color: var(--h1-span-clr);
+    color: var(--h2-span-clr);
     
     /* font-family: "Bellefair", sans-serif; */
     font-weight: 650;
