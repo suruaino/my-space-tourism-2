@@ -182,6 +182,18 @@ header > .closeBtn{
   header nav ul li a span {
     display: none;
   }
+/****************************************/
+  .menuBtn, .closeBtn {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+  ul {
+    flex-direction: row;
+  }
+
+/****************************************/
 }
 
 @media (max-width: 375px) {
@@ -238,5 +250,36 @@ header > .closeBtn{
     position: absolute;
     right: 5%;
     z-index: 10;
+  }
+}
+
+
+.menuBtn, .closeBtn {
+  cursor: pointer;
+  width: 30px; /* Adjust icon size as needed */
+  display: none; /* Initially hidden, displayed based on screen size */
+}
+
+nav {
+  display: none;
+}
+
+nav.open {
+  display: block;
+}
+
+
+@media (max-width: 767px) {
+  .menuBtn {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  nav.open {
+    display: block;
+  }
+  ul {
+    flex-direction: column;
   }
 }

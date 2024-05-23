@@ -6,12 +6,12 @@ import "./header.css";
 import { Link, Outlet } from "react-router-dom";
 
 const Layer = () => {
+  const [showNav, setShowNav] = useState(false);
 
-  const [showNav, setShoNav] = useState(false);
-
-  const menuToggle = (index) => {
-    setShoNav(true);
+  const menuToggle = () => {
+    setShowNav((prev) => !prev);
   };
+
   return (
     <div className="layer">
       <header>
@@ -19,36 +19,41 @@ const Layer = () => {
           <img src={logo} alt="" />
         </div>
 
-        <nav>
+        <nav className={showNav ? 'open' : ''}>
     
           <ul>
 
             <li>
-              <Link to="/Home">
+              <Link to="/Home" onClick={menuToggle}>
               {/* <input type="checkbox" /> */}
                 <span>00</span> Home
               </Link>
             </li>
 
             <li>
-              <Link to="/Destination">
+              <Link to="/Destination" onClick={menuToggle}>
                 <span>01</span> Destination
               </Link>
             </li>
             <li>
-              <Link to="/Crew">
+              <Link to="/Crew" onClick={menuToggle}>
                 <span>02</span> Crew
               </Link>
             </li>
             <li>
-              <Link to="/Technology">
+              <Link to="/Technology" onClick={menuToggle}>
                 <span>03</span> Technology
               </Link>
             </li> 
            </ul>
 
         </nav>
-        <img className='menuBtn' src={menu} alt="" />
+        <img 
+          className='menuBtn' 
+          src={showNav ? close : menu}
+          alt="Menu Toggle"
+          onClick={menuToggle}
+        />
         <img className='closeBtn' src={close} alt="" />
       </header>
       <Outlet />
