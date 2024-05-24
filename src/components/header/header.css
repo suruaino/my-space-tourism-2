@@ -64,9 +64,7 @@ header nav ul {
   height: 100%;
 
 }
-nav ul li.active {
-  border-bottom: 5px solid #FFFFFF;
-}
+
 header nav ul li {
   height: 100%;
   display: flex;
@@ -106,7 +104,9 @@ header > .menuBtn,
 header > .closeBtn{
   display: none;
 }
-
+nav ul li.active {
+  border-bottom: 5px solid #FFFFFF !important;
+}
 @media (min-width: 769px) and (max-width: 1123px)  {
   header nav{
     width: 90%;

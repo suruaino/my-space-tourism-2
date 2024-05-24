@@ -26,6 +26,15 @@ const Layer = () => {
     };
   }, []);
 
+
+  // useEffect(() => {
+  //   console.log('Current path:', location.pathname);
+  // }, [location]);
+  const getNavLinkClass = (path) => {
+    return location.pathname === path ? 'active' : '';
+  };
+
+
   return (
     <div className="layer">
       <header>
@@ -71,22 +80,22 @@ const Layer = () => {
         ) : (
           <nav>
             <ul>
-              <li  className={location.pathname === '/Home' ? 'active' : ''}>
+              <li className={getNavLinkClass('/Home')}>
                 <Link to="/Home">
                   <span>00</span> Home
                 </Link>
               </li>
-              <li className={location.pathname === '/Destination' ? 'active' : ''}>
+              <li className={getNavLinkClass('/Destination')}>
                 <Link to="/Destination">
                   <span>01</span> Destination
                 </Link>
               </li>
-              <li  className={location.pathname === '/Crew' ? 'active' : ''}>
+              <li className={getNavLinkClass('/Crew')}>
                 <Link to="/Crew">
                   <span>02</span> Crew
                 </Link>
               </li>
-              <li className={location.pathname === '/Technology' ? 'active' : ''}>
+              <li className={getNavLinkClass('/Technology')}>
                 <Link to="/Technology">
                   <span>03</span> Technology
                 </Link>
