@@ -102,6 +102,9 @@
 .destination__content-bx > .right .more-details{
     display: flex;
     gap: 79px;
+    border-top: 1px solid var(--bdr-clr);
+    margin-top: 54px;
+    padding-top: 28px;
 }
 .destination__content-bx > .right .more-details .left,
 .destination__content-bx > .right .more-details .right{
@@ -113,9 +116,13 @@
 .destination__content-bx > .right .more-details .avg-distance,
 .destination__content-bx > .right .more-details .travel-time{
     font-size: 14px;
+    font-family: "Barlow", condensed;
+    letter-spacing: 2.36px;
+    color: var(--txt-clr-2);
 }
 .destination__content-bx > .right .more-details .avg-distance__value{
     font-size: 28px;
+    font-family: Bellefair;
 }
 
 @media (max-width: 768px) {

@@ -81,12 +81,13 @@
   }
   .home .right .explore{
     width: 274px;
-   height: 274px;
+    height: 274px;
     border: none;
     border-radius: 50%;
     background-color: var(--txt-clr-1);
     font-size: 32px;
     font-family: "Bellefair";
+    text-transform: uppercase;
 
     position: relative;
     z-index: 0;
