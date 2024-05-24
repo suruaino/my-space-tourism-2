@@ -64,7 +64,9 @@ header nav ul {
   height: 100%;
 
 }
-
+nav ul li.active {
+  border-bottom: 5px solid #FFFFFF;
+}
 header nav ul li {
   height: 100%;
   display: flex;
@@ -79,17 +81,6 @@ header nav ul li {
   /* border-bottom:  5px solid transparent; */
 }
 
-header nav ul li:nth-child(1)::after {
-  /* border-bottom:  5px solid var(--txt-clr-1);
-  content: "";
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: var(--txt-clr-1);
-  position: absolute;
-  bottom: 0;  */
-}
-
 header nav ul li a {
   height: 100%;
   color: var(--txt-clr-1);
@@ -101,7 +92,6 @@ header nav ul li a {
   gap: 11px;
  
   position: relative;
-  /* border: 1px solid blue; */
   border-bottom: 5px solid transparent;
 }
 header nav ul li a:hover{
@@ -110,24 +100,6 @@ header nav ul li a:hover{
 header nav ul li a span {
   color: var(--txt-clr-1);
   font-weight: bold;
-}
-
-header nav ul li::after {
-  /* border-bottom:  5px solid var(--txt-clr-1); */
-  /* content: "";
-  display: block;
-  height: 4px;
-  width: 100%;
-  background-color: transparent;
-  position: absolute;
-  bottom: 0; */
-}
-
-header nav ul li:hover::after {
-  /* border-bottom:  5px solid var(--txt-clr-1); */
-  /* display: block;
-  background-color: var(--hover-clr); */
-
 }
 
 header > .menuBtn,
@@ -142,7 +114,6 @@ header > .closeBtn{
   }
   header nav ul{
     gap: 1rem;
-    /* border: 1px solid white; */
   }
   header nav::before {
     display: none;

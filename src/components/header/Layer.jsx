@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { Link, Outlet, useLocation } from "react-router-dom";
 import logo from "./header-assets/logo.svg";
 import menu from "./header-assets/menu.png";
 import close from "./header-assets/close.png";
 import "./header.css";
-import { Link, Outlet } from "react-router-dom";
+
 
 const Layer = () => {
   const [showNav, setShowNav] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 485);
+  const location = useLocation();
 
   const menuToggle = () => {
     setShowNav((prev) => !prev);
@@ -47,7 +49,7 @@ const Layer = () => {
                       <span>00</span> Home
                     </Link>
                   </li>
-                  <li>
+                  <li >
                     <Link to="/Destination" onClick={menuToggle}>
                       <span>01</span> Destination
                     </Link>
@@ -57,7 +59,7 @@ const Layer = () => {
                       <span>02</span> Crew
                     </Link>
                   </li>
-                  <li>
+                  <li >
                     <Link to="/Technology" onClick={menuToggle}>
                       <span>03</span> Technology
                     </Link>
@@ -69,22 +71,22 @@ const Layer = () => {
         ) : (
           <nav>
             <ul>
-              <li>
+              <li  className={location.pathname === '/Home' ? 'active' : ''}>
                 <Link to="/Home">
                   <span>00</span> Home
                 </Link>
               </li>
-              <li>
+              <li className={location.pathname === '/Destination' ? 'active' : ''}>
                 <Link to="/Destination">
                   <span>01</span> Destination
                 </Link>
               </li>
-              <li>
+              <li  className={location.pathname === '/Crew' ? 'active' : ''}>
                 <Link to="/Crew">
                   <span>02</span> Crew
                 </Link>
               </li>
-              <li>
+              <li className={location.pathname === '/Technology' ? 'active' : ''}>
                 <Link to="/Technology">
                   <span>03</span> Technology
                 </Link>
