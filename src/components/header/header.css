@@ -183,7 +183,7 @@ header > .closeBtn{
     display: none;
   }
 /****************************************/
-  .menuBtn, .closeBtn {
+  /* .menuBtn, .closeBtn {
     display: none;
   }
   nav {
@@ -191,7 +191,7 @@ header > .closeBtn{
   }
   ul {
     flex-direction: row;
-  }
+  } */
 
 /****************************************/
 }
@@ -213,13 +213,14 @@ header > .closeBtn{
   header nav {
     width: 254px;
     height: fit-content;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     position: absolute;
     height: 100dvh;
     right: 0;
     top: -24px;
     border: 1px solid green;
 
+    backdrop-filter: blur(25px);
     /* display: none; */
   }
 
@@ -249,15 +250,15 @@ header > .closeBtn{
     display: block;
     position: absolute;
     right: 5%;
-    z-index: 10;
+    z-index: 100;
   }
 }
 
 
-.menuBtn, .closeBtn {
+/* .menuBtn, .closeBtn {
   cursor: pointer;
-  width: 30px; /* Adjust icon size as needed */
-  display: none; /* Initially hidden, displayed based on screen size */
+  width: 30px; 
+  display: none;
 }
 
 nav {
@@ -266,10 +267,10 @@ nav {
 
 nav.open {
   display: block;
-}
+} */
 
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .menuBtn {
     display: block;
   }
@@ -282,4 +283,4 @@ nav.open {
   ul {
     flex-direction: column;
   }
-}
+} */

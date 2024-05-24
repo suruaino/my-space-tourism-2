@@ -9,7 +9,7 @@ const Layer = () => {
   const [showNav, setShowNav] = useState(false);
 
   const menuToggle = () => {
-    setShowNav((prev) => !prev);
+    setShowNav(prev => !prev);
   };
 
   return (
@@ -19,42 +19,41 @@ const Layer = () => {
           <img src={logo} alt="" />
         </div>
 
-        <nav className={showNav ? 'open' : ''}>
+        {showNav && (<nav>
     
           <ul>
 
             <li>
-              <Link to="/Home" onClick={menuToggle}>
-              {/* <input type="checkbox" /> */}
+              <Link to="/Home" onClick={ menuToggle }>
                 <span>00</span> Home
               </Link>
             </li>
 
             <li>
-              <Link to="/Destination" onClick={menuToggle}>
+              <Link to="/Destination" onClick={ menuToggle }>
                 <span>01</span> Destination
               </Link>
             </li>
             <li>
-              <Link to="/Crew" onClick={menuToggle}>
+              <Link to="/Crew" onClick={ menuToggle }>
                 <span>02</span> Crew
               </Link>
             </li>
             <li>
-              <Link to="/Technology" onClick={menuToggle}>
+              <Link to="/Technology" onClick={ menuToggle }>
                 <span>03</span> Technology
               </Link>
             </li> 
            </ul>
 
         </nav>
+        )}
         <img 
           className='menuBtn' 
-          src={showNav ? close : menu}
-          alt="Menu Toggle"
+          src={ showNav? close : menu } 
+          alt="" 
           onClick={menuToggle}
         />
-        <img className='closeBtn' src={close} alt="" />
       </header>
       <Outlet />
     </div>
