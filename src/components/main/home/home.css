@@ -27,7 +27,7 @@
     
     text-transform: uppercase;
   
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .home .left{
     width: 45%;
@@ -37,7 +37,7 @@
     flex-direction: column;
     /* gap: 1px; */
   
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
   
   }
   .home .left h1{
@@ -76,7 +76,7 @@
     display: flex;
     justify-content: end;
     align-items: end;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
   
   }
   .home .right .explore{
@@ -165,7 +165,7 @@
       background-repeat: no-repeat;
       background-position: center; 
       background-size: cover;
-     height: 100dvh;
+      height: 100dvh;
     }
     .home-container{
       max-width: 90%;

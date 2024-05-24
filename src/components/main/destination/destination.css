@@ -103,8 +103,8 @@
     display: flex;
     gap: 79px;
     border-top: 1px solid var(--bdr-clr);
-    margin-top: 54px;
-    padding-top: 28px;
+    margin-top: 50px;
+    padding-top: 20px;
 }
 .destination__content-bx > .right .more-details .left,
 .destination__content-bx > .right .more-details .right{
