@@ -1,6 +1,6 @@
 # Frontend Mentor - Space tourism website solution
 
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,18 +15,16 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-
 ## Overview
 
 ### Screenshots
 
-- [Mobile](assets/images/agecalculator-mobile.png)
-- [Desktop](assets/images/agecalculator-desktop.png)
+- [screenshot](space-tourism-screenshot.png)
 
 ### Links
 
-- Solution URL: (https://github.com/suruaino/challenge16.git)
-- Live Site URL: (https://age-calculator-suru.netlify.app/)
+- Solution URL: (https://github.com/suruaino/my-space-tourism-2.git)
+- Live Site URL: (https://suru-space-tourism.netlify.app/)
 
 ## My process
 
@@ -52,7 +50,6 @@ I will want to learn more about react-router and react hooks.
 - [Google](https://www.google.com) - Always my first option before requesting help from anybody. Its a good resource any coder.
 - [React Router](https://reactrouter.com/en/main) - I have to be here to update my knowlwdge.
 - [W3schools](https://www.w3schools.com/react/default.asp) - It was helpful leraning react with w3schools.
-
 
 ## Author
 
