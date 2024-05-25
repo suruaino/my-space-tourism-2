@@ -170,13 +170,13 @@
     .home-container{
       max-width: 90%;
       gap: 88px;
-      padding-top: 112px;
+      padding-top: 100px;
       /* padding-bottom: 100px; */
 
     }
     .home .left{
       font-size: 80px;
-      gap: 16px;
+      /* gap: 16px; */
 
     }
     .home .left h1{
@@ -193,9 +193,7 @@
       font-size: 15px;
       line-height: 25px;
     }
-    .home .right{
-      border: 1px solid ;
-    }
+
     .home .right .explore{
       width: 150px;
       height: 150px;
