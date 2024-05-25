@@ -76,7 +76,7 @@ header nav ul li {
 
   /* border: 1px solid red; */
 
-  /* border-bottom:  5px solid transparent; */
+  border-bottom:  5px solid transparent;
 }
 
 header nav ul li a {
@@ -90,9 +90,8 @@ header nav ul li a {
   gap: 11px;
  
   position: relative;
-  border-bottom: 5px solid transparent;
 }
-header nav ul li a:hover{
+header nav ul li:hover{
   border-bottom:  5px solid var(--hover-clr)
 }
 header nav ul li a span {

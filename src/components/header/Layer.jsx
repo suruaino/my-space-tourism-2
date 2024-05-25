@@ -5,7 +5,6 @@ import menu from "./header-assets/menu.png";
 import close from "./header-assets/close.png";
 import "./header.css";
 
-
 const Layer = () => {
   const [showNav, setShowNav] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 485);
@@ -26,14 +25,10 @@ const Layer = () => {
     };
   }, []);
 
-
-  // useEffect(() => {
-  //   console.log('Current path:', location.pathname);
-  // }, [location]);
   const getNavLinkClass = (path) => {
-    return location.pathname === path ? 'active' : '';
+    const className = location.pathname.startsWith(path) ? 'active' : '';
+    return className;
   };
-
 
   return (
     <div className="layer">
@@ -54,22 +49,22 @@ const Layer = () => {
               <nav>
                 <ul>
                   <li>
-                    <Link to="/Home" onClick={menuToggle}>
+                    <Link to="/home" onClick={menuToggle}>
                       <span>00</span> Home
                     </Link>
                   </li>
-                  <li >
-                    <Link to="/Destination" onClick={menuToggle}>
+                  <li>
+                    <Link to="/destination" onClick={menuToggle}>
                       <span>01</span> Destination
                     </Link>
                   </li>
                   <li>
-                    <Link to="/Crew" onClick={menuToggle}>
+                    <Link to="/crew" onClick={menuToggle}>
                       <span>02</span> Crew
                     </Link>
                   </li>
-                  <li >
-                    <Link to="/Technology" onClick={menuToggle}>
+                  <li>
+                    <Link to="/technology" onClick={menuToggle}>
                       <span>03</span> Technology
                     </Link>
                   </li>
@@ -80,23 +75,23 @@ const Layer = () => {
         ) : (
           <nav>
             <ul>
-              <li className={getNavLinkClass('/Home')}>
-                <Link to="/Home">
+              <li className={getNavLinkClass('/home')}>
+                <Link to="/home">
                   <span>00</span> Home
                 </Link>
               </li>
-              <li className={getNavLinkClass('/Destination')}>
-                <Link to="/Destination">
+              <li className={getNavLinkClass('/destination')}>
+                <Link to="/destination">
                   <span>01</span> Destination
                 </Link>
               </li>
-              <li className={getNavLinkClass('/Crew')}>
-                <Link to="/Crew">
+              <li className={getNavLinkClass('/crew')}>
+                <Link to="/crew">
                   <span>02</span> Crew
                 </Link>
               </li>
-              <li className={getNavLinkClass('/Technology')}>
-                <Link to="/Technology">
+              <li className={getNavLinkClass('/technology')}>
+                <Link to="/technology">
                   <span>03</span> Technology
                 </Link>
               </li>

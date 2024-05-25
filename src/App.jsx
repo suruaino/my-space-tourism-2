@@ -39,7 +39,7 @@ const ErrorMsg = () => {
       <h2>
         404 Error <br /> Page not found
       </h2>
-      <Link to="/Home">Back to home</Link>
+      <Link to="/home">Back to home</Link>
     </section>
   );
 };
