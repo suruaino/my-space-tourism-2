@@ -23,7 +23,7 @@
     height: 100%;
 
     padding-top: 387px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     
     text-transform: uppercase;
   
@@ -43,7 +43,7 @@
   .home .left h1{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 1rem; */
 
     font-size: 150px;
     font-family: "Bellefair", sans-serif;
